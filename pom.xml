@@ -37,11 +37,16 @@
           </execution>
         </executions>
         <configuration>
-          <configLocation>google_checks.xml</configLocation> <!-- Or use sun_checks.xml -->
+          <configLocation>google_checks.xml</configLocation>
           <failOnViolation>true</failOnViolation>
         </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.2</version>
       </plugin>
     </plugins>
   </build>
 </project>
-
